@@ -6,7 +6,7 @@ const handlebars = require("express-handlebars");
 const logger = require("morgan");
 
 const db = require("./models");
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 
 let MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
